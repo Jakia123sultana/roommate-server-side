@@ -117,8 +117,8 @@ console.log(id)
     app.get("/roommates/:id", async (req, res) => {
       const id = req.params.id;
       const query = {_id: new ObjectId(id)};
-      const coffee = await roommateCollection.findOne(query);
-      res.send(coffee);
+      const room = await roommateCollection.findOne(query);
+      res.send(room);
     });
 
    
