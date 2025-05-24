@@ -87,7 +87,7 @@ console.log(id)
       const id = req.params.id;
       const filter = {_id: new ObjectId(id)};
       const options = {upsert: true};
-      const updatedCoffee = req.body;
+      const updatedRoom = req.body;
       // const updatedDoc = {
       //     $set: updatedCoffee
       // }
@@ -95,14 +95,14 @@ console.log(id)
       const updatedDoc = {
         $set: {
          
-          title: updatedCoffee.title,
-           location: updatedCoffee.location,
-         rent: updatedCoffee.rent,
-          preferences: updatedCoffee.preferences,
-         contact: updatedCoffee.contact,
-         name: updatedCoffee.name,
-         roomType : updatedCoffee.roomType,
-        description : updatedCoffee.description,
+          title: updatedRoom.title,
+           location: updatedRoom.location,
+         rent: updatedRoom.rent,
+          preferences: updatedRoom.preferences,
+         contact: updatedRoom.contact,
+         name: updatedRoom.name,
+         roomType : updatedRoom.roomType,
+        description : updatedRoom.description,
         },
       };
 
